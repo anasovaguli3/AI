@@ -8,6 +8,7 @@ Quyma (cast) detallarning tasvirlarini **defect** (nuqsonli) yoki **normal** (nu
 
 ```
 GULI
+
 ├── config.yaml          # Barcha sozlamalar (epoch, batch_size va boshqalar)
 ├── requirements.txt     # Kerakli kutubxonalar
 ├── README.md            # Shu fayl
@@ -204,3 +205,11 @@ Chiqish: [defect ehtimoli, normal ehtimoli]
 | CPU           | To'liq qo'llab-quvvatlanadi        |
 | CUDA (NVIDIA) | Avtomatik aniqlanadi               |
 | MPS (Apple)   | Avtomatik aniqlanadi (M1/M2/M3)    |
+
+---
+
+## Muallif
+
+BTEC Level 4 — Unit 15: Fundamentals of AI & Intelligent Systems  
+Talaba ID: 240276 | Guruh: 24-403  
+Baholovchi: Muxammadjon Xolmirzayev | 2026

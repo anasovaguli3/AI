@@ -7,7 +7,7 @@ Quyma (cast) detallarning tasvirlarini **defect** (nuqsonli) yoki **normal** (nu
 ## Loyiha Tuzilishi
 
 ```
-Muslima_clean/
+
 ├── config.yaml          # Barcha sozlamalar (epoch, batch_size va boshqalar)
 ├── requirements.txt     # Kerakli kutubxonalar
 ├── README.md            # Shu fayl

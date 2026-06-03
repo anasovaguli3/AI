@@ -7,7 +7,6 @@ Quyma (cast) detallarning tasvirlarini **defect** (nuqsonli) yoki **normal** (nu
 ## Loyiha Tuzilishi
 
 ```
-GULI
 
 ├── config.yaml          # Barcha sozlamalar (epoch, batch_size va boshqalar)
 ├── requirements.txt     # Kerakli kutubxonalar

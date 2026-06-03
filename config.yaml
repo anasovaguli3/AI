@@ -1,0 +1,53 @@
+# ===== Quyma Detal Nosozliklarini Aniqlash — CNN Sozlamalari =====
+
+# --- Ma'lumotlar ---
+data:
+  raw_dir: "data/raw_images"
+  label_file: "data/label.csv"
+  processed_dir: "data/processed"
+  image_column: "image"
+  label_column: "choice"
+  classes:
+    - "defect"
+    - "normal"
+
+# --- Bo'lish nisbatlari ---
+split:
+  train_ratio: 0.8
+  val_ratio: 0.1
+  # test_ratio = 1 - train_ratio - val_ratio = 0.1
+
+# --- Rasm sozlamalari ---
+image:
+  size: 224
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+
+# --- Augmentatsiya (faqat train) ---
+augmentation:
+  flip: true
+  rotation: 10
+
+# --- Model ---
+model:
+  name: "CastCNN"
+  dropout: 0.4
+
+# --- O'qitish ---
+training:
+  batch_size: 16
+  epochs: 20
+  learning_rate: 0.001
+  early_stop_patience: 5
+  num_workers: 2
+
+# --- Chiqish papkalari ---
+output:
+  models_dir: "outputs/models"
+  plots_dir: "outputs/plots"
+  metrics_dir: "outputs/metrics"
+  best_model: "outputs/models/best_model.pth"
+  last_model: "outputs/models/last_model.pth"
+
+# --- Seed (takrorlanish uchun) ---
+seed: 42

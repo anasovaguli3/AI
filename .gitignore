@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (rasmlar katta, git da saqlanmaydi)
+data/raw_images/*.jpeg
+data/raw_images/*.jpg
+data/raw_images/*.png
+data/processed/
+
+# Model fayllari (katta)
+outputs/models/*.pth
+
+# OS
+.DS_Store
+Thumbs.db
